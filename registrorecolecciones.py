@@ -10,11 +10,11 @@ def registrar_recolecciones():
     for material in recolecciones:
         print("\nIngrese 20 mediciones para", material)
 
-        contador = 0
+        contador = 1
 
-        while contador < 20:
+        while contador <= 20:
 
-            dato = input("Medicion en kg: ")
+            dato = input("Medicion en kg " + str(contador) + ": ")
 
             # Validar que no esté vacío
             if dato == "":
